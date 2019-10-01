@@ -35,6 +35,6 @@ let synthesizer = AVSpeechSynthesizer()
         let utterance = AVSpeechUtterance(string: message)
         
         //speak the message
-        synthesizer.speak(utterance)
+        synthesizer.speak(utterance) 
 
 }
