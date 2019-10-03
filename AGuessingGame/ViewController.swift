@@ -10,8 +10,9 @@ import UIKit
 import AVFoundation
 
 class ViewController: UIViewController {
+    @IBOutlet weak var submittedGuess: UITextField!
     // MARK: Properties
-    
+    let targetNumber = Int.random(in: 1...100)
     
     
     // MARK: Initializers
@@ -37,4 +38,15 @@ let synthesizer = AVSpeechSynthesizer()
         //speak the message
         synthesizer.speak(utterance) 
 
+}
+   // will be used to check a guess
+    @IBAction func checkGuess(_ sender: Any) {
+        // Obtain the guessed value from the text field
+        let guessText = submittedGuess.text!
+        let guessNumber = Int(guessText)!
+        
+        //For testing purposes, what was the guess?
+        print ("For testing purposes, the guess made was  \(guessNumber)")
+
+    }
 }
