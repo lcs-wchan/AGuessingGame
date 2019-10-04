@@ -47,6 +47,8 @@ let synthesizer = AVSpeechSynthesizer()
         
         //For testing purposes, what was the guess?
         print ("For testing purposes, the guess made was  \(guessNumber)")
+        
+        //
 
         // give the approprite feedback to the user
         if guessNumber > targetNumber {
