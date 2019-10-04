@@ -53,10 +53,43 @@ let synthesizer = AVSpeechSynthesizer()
         // give the approprite feedback to the user
         if guessNumber > targetNumber {
             print("Guess lower next time")
+            // make a object named 'synthsizer', which is an instance of a class 'AVSpeech Synthesizer'
+            let synthesizer = AVSpeechSynthesizer()
+                    
+                    // make a string that contains what we want the computer to say
+                    let message = "Guess lower next time"
+                    
+                    // make an object 'utterance', which is an instance of the class AVSpeechUtterance
+                    let utterance = AVSpeechUtterance(string: message)
+                    
+                    //speak the message
+                    synthesizer.speak(utterance)
         }else if guessNumber < targetNumber {
             print("Guess higher next time")
+            // make a object named 'synthsizer', which is an instance of a class 'AVSpeech Synthesizer'
+            let synthesizer = AVSpeechSynthesizer()
+                    
+                    // make a string that contains what we want the computer to say
+                    let message = "Guess higher next time"
+                    
+                    // make an object 'utterance', which is an instance of the class AVSpeechUtterance
+                    let utterance = AVSpeechUtterance(string: message)
+                    
+                    //speak the message
+                    synthesizer.speak(utterance)
         }else {
             print("You are correct")
+            // make a object named 'synthsizer', which is an instance of a class 'AVSpeech Synthesizer'
+            let synthesizer = AVSpeechSynthesizer()
+                    
+                    // make a string that contains what we want the computer to say
+                    let message = "You are correct"
+                    
+                    // make an object 'utterance', which is an instance of the class AVSpeechUtterance
+                    let utterance = AVSpeechUtterance(string: message)
+                    
+                    //speak the message
+                    synthesizer.speak(utterance)
         }
 }
 }
